@@ -1,11 +1,11 @@
 <div class="container">
 <div class="row">
     <div class="col-md-12">
-        <h2>Enter your details </h2>
+        <h2>Sign up for news letter</h2>
     </div>
 </div>
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-6">
 <form name="signUpForm" novalidate>
     <div class="form-group">
       <label for="firstName">First Name:</label>
@@ -34,7 +34,7 @@
       <span class="has-error" ng-show="UserCtrl.Submit && signUpForm.menushortcode.$error.required">This is a required field.</span>
       <span ng-show="!UserCtrl.IsValidItem">No such menu number exists</span>
     </div>
-    <button class="btn btn-default" ng-click="UserCtrl.Submit = true; signUpForm.$valid && UserCtrl.SaveUserInformation()" ng-disabled="!signUpForm.$valid && UserCtrl.Submit == true">Send</button>
+    <button class="btn btn-default" ng-click="UserCtrl.Submit = true; signUpForm.$valid && UserCtrl.SaveUserInformation()" ng-disabled="!signUpForm.$valid && UserCtrl.Submit == true">Submit</button>
   </form>
  </div>
 </div>
